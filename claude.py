@@ -12,10 +12,10 @@ def get_db_cursor():
     try:
         conn = pyodbc.connect(
             "DRIVER={ODBC Driver 17 for SQL Server};"
-            "SERVER=172.20.13.73;"
-            "DATABASE=FredDB;"
-            "UID=sa;"
-            "PWD=sefam@21;"
+            "SERVER=;"
+            "DATABASE=;"
+            "UID=;"
+            "PWD=;"
         )
         return conn, conn.cursor()
     except Exception as e:
